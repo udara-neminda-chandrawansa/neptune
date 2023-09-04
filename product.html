@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Buy Products</title>
+</head>
+<body>
+    <nav id="nav">
+        <h2 class="brand-h2" id="brand-h2">Neptune.com</h2>
+        <div class="hideable-grid-end grid-end">
+            <div class="flex-center">
+                <ul class="nav-links" id="navUL">
+                    <li class="nav-links-li" onclick="window.location.href='index.html'">Home</li>
+                    <li class="nav-links-li active-nav" onclick="window.location.href='allprods.html'">Products</li>
+                    <li class="nav-links-li" onclick="window.location.href='buynow.html'">Buy Now</li>
+                    <li class="nav-links-li" onclick="window.location.href='Discounts.html'">Discounts</li>
+                    <li class="nav-links-li" onclick="window.location.href='Giveaways.html'">Giveaways</li>
+                    <li class="nav-links-li" onclick="window.location.href='sign.html'">Sign In</li>
+                </ul>
+            </div>
+        </div>
+        <button class="ham" id="ham"></button>
+    </nav>
+    <div class="flex">
+        <div class="product">
+            <h1 id="productName">Product Name</h1>
+            <p id="price" class="price" style="font-size: large; font-style: italic;">Price</p>
+            <div class="image-desc">
+                <div id="productImage">
+                    <!--Product Image will be added here-->
+                </div>
+                <p id="productDesc">Product Description</p>    
+            </div>
+            <div class="buy">
+                <button id="buyButton" onclick="buynow()">Buy Now</button>
+            </div>
+        </div>    
+    </div>
+    <footer>
+        <div class="footer-links">
+            <ul class="footer_ul">
+                <li class=""><a href="" class="">Delivery Modes</a></li>
+                <li class=""><a href="" class="">Delivery Agents</a></li>
+                <li class=""><a href="" class="">Payment Methods</a></li>
+                <li class=""><a href="" class="">Work with Us</a></li>
+                <li class=""><a href="" class="">About Us</a></li>
+            </ul>    
+        </div>
+        <div class="social">
+            <ul class="social_ul">
+                <li>
+                    <div class="social-card" id="facebook">
+                        <img src="social/fb.png" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div class="social-card" id="instagram">
+                        <img src="social/insta.png" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div class="social-card" id="twitter">
+                        <img src="social/tw.png" alt="">
+                    </div>
+                </li>
+                <li>
+                    <div class="social-card" id="snapchat">
+                        <img src="social/snap.png" alt="">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

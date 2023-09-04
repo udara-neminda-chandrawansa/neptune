@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Neptune | E - Commerce for the Modern World !</title>
+</head>
+<body>
+    <nav id="nav">
+        <h2 class="brand-h2" id="brand-h2">Neptune.com</h2>
+        <div class="hideable-grid-end grid-end">
+            <div class="flex-center">
+                <ul class="nav-links" id="navUL">
+                    <li class="nav-links-li active-nav" onclick="window.location.href='index.html'">Home</li>
+                    <li class="nav-links-li" onclick="window.location.href='allprods.html'">Products</li>
+                    <li class="nav-links-li" onclick="window.location.href='buynow.html'">Buy Now</li>
+                    <li class="nav-links-li" onclick="window.location.href='Discounts.html'">Discounts</li>
+                    <li class="nav-links-li" onclick="window.location.href='Giveaways.html'">Giveaways</li>
+                    <li class="nav-links-li" onclick="window.location.href='sign.html'">Sign In</li>
+                </ul>
+            </div>
+        </div>
+        <button class="ham" id="ham"></button>
+    </nav>
+    <div class="banner">
+        <div class="banner-q">
+            <h1>Prices from another Planet !</h1>
+            <h3>Grab Best Deals @ Neptune.com</h3>
+        </div>
+        <div class="carousel banner-l">
+            <img src="carousel/2.png" alt="error" class="carousel-img active">
+            <img src="carousel/3.png" alt="error" class="carousel-img">
+            <img src="carousel/4.png" alt="error" class="carousel-img">
+            <span class="arrow arrow-left" onclick="moveToPreviousImage()"></span>
+            <span class="arrow arrow-right" onclick="moveToNextImage()"></span>
+        </div>
+    </div>
+    <div class="content">        
+        <div class="panel">
+            <h2 class="section-heading">New Additions</h2>
+            <div class="right-panel">
+                <div class="right-cards cards" onclick="addToCart('camaTshirt')">
+                    <img src="https://s.alicdn.com/@sc04/kf/H65bdfd339ff94ad6a7e8b048ef2ce1597.jpg_480x480.jpg" alt="">
+                    <p>Cama T Shirt</p>
+                    <p class="price">$12</p>
+                </div>
+                <div class="right-cards cards" onclick="addToCart('scooter')">
+                    <img src="https://s.alicdn.com/@sc04/kf/Hcca4ce37c04947ad922084e6522bd115k.jpg_480x480.jpg" alt="">
+                    <p>Scooter</p>
+                    <p class="price">$65</p>
+                </div>
+                <div class="right-cards cards" onclick="addToCart('bicycle2')">
+                    <img src="https://s.alicdn.com/@sc04/kf/A17019eeaa8e64060a64dbf9a08077795q.jpg_480x480.jpg" alt="">
+                    <p>Bicycle</p>
+                    <p class="price">$50</p>
+                </div>
+                <div class="right-cards cards" onclick="addToCart('sweater')">
+                    <img src="https://s.alicdn.com/@sc04/kf/A0db09a4450af40b7b3c2028aabec8e7aQ.jpg_480x480.jpg" alt="">
+                    <p>Sweater</p>
+                    <p class="price">$11</p>
+                </div>
+                <div class="right-cards cards" onclick="addToCart('soundboard')">
+                    <img src="https://s.alicdn.com/@sc04/kf/H6c4c79c402024625bed588847228f1daQ.jpg_480x480.jpg" alt="">
+                    <p>Sound Board</p>
+                    <p class="price">$150</p>
+                </div>
+                <div class="right-cards cards" onclick="addToCart('coffeeMug')">
+                    <img src="https://s.alicdn.com/@sc04/kf/H20b1a8a8be934579b8ccaa3fd31ffae0G.jpg_480x480.jpg" alt="">
+                    <p>Coffee Mug</p>
+                    <p class="price">$12</p>
+                </div>
+                <div class="right-cards cards" onclick="addToCart('whiteHoodie')">
+                    <img src="https://s.alicdn.com/@sc04/kf/A0cd4acc866fd45fd8e14effb6a5db801R.jpg_480x480.jpg" alt="">
+                    <p>White Hoodie</p>
+                    <p class="price">$10</p>
+                </div>
+                <div class="right-cards cards" onclick="addToCart('laptop')">
+                    <img src="https://s.alicdn.com/@sc04/kf/Sb3fdebdda7c64e2fb7529cbf08b8fb154.jpg_480x480.jpg" alt="">
+                    <p>Laptop</p>
+                    <p class="price">$1250</p>
+                </div>
+                <div class="right-cards cards" onclick="addToCart('waterBottle')">
+                    <img src="https://s.alicdn.com/@sc04/kf/H2613c03e53664dc286b154facea6d140e.jpg_480x480.jpg" alt="">
+                    <p>Water Bottle</p>
+                    <p class="price">$5</p>
+                </div>
+                <div class="right-cards cards" onclick="addToCart('Tractor')">
+                    <img src="https://s.alicdn.com/@sc04/kf/H12ca2d06b7e348cbaae53a9c01345a9ad.png_480x480.jpg" alt="">
+                    <p>Tractor</p>
+                    <p class="price">$125,000</p>
+                </div>
+                <div class="right-cards cards" onclick="addToCart('storageBox')">
+                    <img src="https://s.alicdn.com/@sc04/kf/Hdd679c4b25ea4a0ab3e3dcba79d44574v.jpg_480x480.jpg" alt="">
+                    <p>Storage Box</p>
+                    <p class="price">$36</p>
+                </div>
+                <div class="right-cards cards" onclick="addToCart('casualHoodie')">
+                    <img src="https://s.alicdn.com/@sc04/kf/Ad47c90828a194dc988a8eeed4ae1a82fO.jpeg_480x480.jpg" alt="">
+                    <p>Casual Hoodie</p>
+                    <p class="price">$25</p>
+                </div>
+                <!--
+                <div class="right-cards cards" onclick="addToCart('bookCover')">
+                    <img src="https://s.alicdn.com/@sc04/kf/H2613c03e53664dc286b154facea6d140e.jpg_480x480.jpg" alt="">
+                    <p>Book Cover</p>
+                    <p class="price">$10</p>
+                </div>
+                <div class="right-cards cards" onclick="addToCart('Tractor')">
+                    <img src="https://s.alicdn.com/@sc04/kf/H12ca2d06b7e348cbaae53a9c01345a9ad.png_480x480.jpg" alt="">
+                    <p>Tractor</p>
+                    <p class="price">$125,000</p>
+                </div>
+                <div class="right-cards cards" onclick="addToCart('storageBox')">
+                    <img src="https://s.alicdn.com/@sc04/kf/Hdd679c4b25ea4a0ab3e3dcba79d44574v.jpg_480x480.jpg" alt="">
+                    <p>Storage Box</p>
+                    <p class="price">$36</p>
+                </div>
+                <div class="right-cards cards" onclick="addToCart('casualHoodie')">
+                    <img src="https://s.alicdn.com/@sc04/kf/Ad47c90828a194dc988a8eeed4ae1a82fO.jpeg_480x480.jpg" alt="">
+                    <p>Casual Hoodie</p>
+                    <p class="price">$25</p>
+                </div>
+                -->
+            </div>
+        </div>
+        <div class="left-panel">
+            <h2 class="section-heading">Discounts</h2>
+            <div class="left-cards cards" onclick="addToCart('laserPrinter')">
+                <img src="https://s.alicdn.com/@sc04/kf/H94b2dfe3b9044a7b8622755f7ef754bew.png_250x250xz.jpg" alt="">
+                <div class="grid-end">
+                    <p>Laser Printer</p>
+                    <p class="price">$1200</p>
+                </div>
+            </div>
+            <div class="left-cards cards" onclick="addToCart('plotter')">
+                <img src="https://s.alicdn.com/@sc04/kf/Ha45b18fe060e44e88f31aa43c8b9788bc.jpg_250x250xz.jpg" alt="">
+                <div class="grid-end">
+                    <p>Plotter</p>
+                    <p class="price">$500</p>
+                </div>
+            </div>
+            <div class="left-cards cards" onclick="addToCart('cargoPants')">
+                <img src="https://s.alicdn.com/@sc04/kf/A1866b91aa97a41d4a3e439d8ff6f4b8a3.jpeg_250x250xz.jpg" alt="">
+                <div class="grid-end">
+                    <p>Cargo Pants</p>
+                    <p class="price">$10</p>
+                </div>
+            </div>
+            <div class="left-cards cards" onclick="addToCart('bicycle')">
+                <img src="https://s.alicdn.com/@sc04/kf/Ha0aa25b57d4f42d69c69a8ffc1e6ea0bi.jpg_250x250xz.jpg" alt="">
+                <div class="grid-end">
+                    <p>Bicycle</p>
+                    <p class="price">$300</p>
+                </div>
+            </div>
+            <div class="left-cards cards" onclick="addToCart('airPods')">
+                <img src="https://s.alicdn.com/@sc04/kf/Hb017eea7b02f476999b4e5d943d17ea8u.jpg_250x250xz.jpg" alt="">
+                <div class="grid-end">
+                    <p>AirPods</p>
+                    <p class="price">$25</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<footer>
+    <div class="footer-links">
+        <ul class="footer_ul">
+            <li class=""><a href="" class="">Delivery Modes</a></li>
+            <li class=""><a href="" class="">Delivery Agents</a></li>
+            <li class=""><a href="" class="">Payment Methods</a></li>
+            <li class=""><a href="" class="">Work with Us</a></li>
+            <li class=""><a href="" class="">About Us</a></li>
+        </ul>    
+    </div>
+    <div class="social">
+        <ul class="social_ul">
+            <li>
+                <div class="social-card" id="facebook">
+                    <img src="social/fb.png" alt="">
+                </div>
+            </li>
+            <li>
+                <div class="social-card" id="instagram">
+                    <img src="social/insta.png" alt="">
+                </div>
+            </li>
+            <li>
+                <div class="social-card" id="twitter">
+                    <img src="social/tw.png" alt="">
+                </div>
+            </li>
+            <li>
+                <div class="social-card" id="snapchat">
+                    <img src="social/snap.png" alt="">
+                </div>
+            </li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>
