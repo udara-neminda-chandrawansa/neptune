@@ -78,7 +78,7 @@ function check(){
 }
 // Buy Now button function
 function buynow(){
-  alert("Congratulations ! You just bought this Nigga !! No Refunds !!!");
+  alert("Purchase Successful!");
 }
 
 // Get references to the carousel images and arrow spans
