@@ -1,0 +1,1 @@
+Welcolme to my simple E-Commerce web app! This is a simple front-end. This only includes landing page and sign in page. Vanilla CSS was used for design. Check it out : https://udara-neminda-chandrawansa.github.io/neptune/
